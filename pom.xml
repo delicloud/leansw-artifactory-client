@@ -3,7 +3,7 @@
 
     <groupId>com.thoughtworks.lean</groupId>
     <artifactId>leansw-artifactory-client</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>leansw-github-client</name>
@@ -25,7 +25,7 @@
         <url>https://github.com/tw-leansw/leansw-artifactory-client</url>
         <connection>scm:git:git://github.com:tw-leansw/leansw-artifactory-client.git</connection>
         <developerConnection>scm:git:git@github.com:tw-leansw/leansw-artifactory-client.git</developerConnection>
-        <tag>v1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <dependencies>
