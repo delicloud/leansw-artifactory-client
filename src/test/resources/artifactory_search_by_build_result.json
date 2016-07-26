@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "repo": "test-repo",
+      "path": "test-pipeline-2/29.1",
+      "name": "demo.jar",
+      "type": "file",
+      "size": 1787989,
+      "created": "2016-05-11T12:52:12.350Z",
+      "created_by": "admin",
+      "modified": "2016-05-11T12:52:12.297Z",
+      "modified_by": "admin",
+      "updated": "2016-05-11T12:52:12.297Z",
+      "depth": 3,
+      "actual_md5": "2a2d5187ed7041fffe803d4b8eef4cb2",
+      "actual_sha1": "efb17d7062a7a188fb7b1a8cf1c149f462ae5804",
+      "original_md5": "2a2d5187ed7041fffe803d4b8eef4cb2",
+      "original_sha1": "efb17d7062a7a188fb7b1a8cf1c149f462ae5804"
+    },
+    {
+      "repo": "test-repo",
+      "path": "test-pipeline-2/29.1",
+      "name": "demo_1.jar",
+      "type": "file",
+      "size": 1787989,
+      "created": "2016-05-11T12:52:12.440Z",
+      "created_by": "admin",
+      "modified": "2016-05-11T12:52:12.440Z",
+      "modified_by": "admin",
+      "updated": "2016-05-11T12:52:12.440Z",
+      "depth": 3,
+      "actual_md5": "2a2d5187ed7041fffe803d4b8eef4cb2",
+      "actual_sha1": "efb17d7062a7a188fb7b1a8cf1c149f462ae5804",
+      "original_md5": "NO_ORIG",
+      "original_sha1": "NO_ORIG"
+    },
+    {
+      "repo": "test-repo",
+      "path": "test-pipeline-2/29.1",
+      "name": "lean-status-notifier-1.0-SNAPSHOT.jar",
+      "type": "file",
+      "size": 1787989,
+      "created": "2016-05-11T12:52:12.391Z",
+      "created_by": "admin",
+      "modified": "2016-05-11T12:52:12.391Z",
+      "modified_by": "admin",
+      "updated": "2016-05-11T12:52:12.391Z",
+      "depth": 3,
+      "actual_md5": "2a2d5187ed7041fffe803d4b8eef4cb2",
+      "actual_sha1": "efb17d7062a7a188fb7b1a8cf1c149f462ae5804",
+      "original_md5": "NO_ORIG",
+      "original_sha1": "NO_ORIG"
+    }
+  ],
+  "range": {
+    "start_pos": 0,
+    "end_pos": 3,
+    "total": 3
+  }
+}
