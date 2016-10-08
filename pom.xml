@@ -15,7 +15,6 @@
         <version>Brixton.SR1</version>
     </parent>
 
-
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,7 +28,6 @@
     </scm>
 
     <dependencies>
-
         <dependency>
             <groupId>com.thoughtworks.lean</groupId>
             <artifactId>leansw-common</artifactId>
@@ -39,13 +37,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
         </dependency>
-
-
         <dependency>
             <groupId>org.jfrog.artifactory.client</groupId>
             <artifactId>artifactory-java-client-services</artifactId>
@@ -57,57 +52,43 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
-
-
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-commons</artifactId>
         </dependency>
-
-
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
         </dependency>
-
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>2.8.2</version>
         </dependency>
-
         <dependency>
             <groupId>com.googlecode.lambdaj</groupId>
             <artifactId>lambdaj</artifactId>
             <version>2.3.3</version>
         </dependency>
-
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>19.0</version>
         </dependency>
-
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>2.6</version>
         </dependency>
-
         <dependency>
             <groupId>com.github.fge</groupId>
             <artifactId>jackson-coreutils</artifactId>
             <version>1.8</version>
         </dependency>
-
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -119,22 +100,17 @@
             <version>1.8.5</version>
             <scope>test</scope>
         </dependency>
-
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-
         <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all -->
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>
             <version>1.3</version>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/io.github.benas/random-beans -->
         <dependency>
             <groupId>io.github.benas</groupId>
@@ -142,21 +118,18 @@
             <version>3.2.0</version>
             <scope>test</scope>
         </dependency>
-
-
     </dependencies>
 
     <distributionManagement>
         <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <url>http://nexus.server:9091/content/repositories/snapshots/</url>
+            <id>libs-snapshot-local</id>
+            <url>http://artifactory.dev.twleansw.com:8081/artifactory/libs-snapshot-local</url>
         </snapshotRepository>
         <repository>
-            <id>nexus-releases</id>
-            <url>http://nexus.server:9091/content/repositories/releases/</url>
+            <id>libs-release-local</id>
+            <url>http://artifactory.dev.twleansw.com:8081/artifactory/libs-release-local</url>
         </repository>
     </distributionManagement>
-
 
     <build>
         <plugins>
@@ -183,35 +156,7 @@
                     </goals>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>2.7</version>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
-                <executions>
-                    <execution>
-                        <id>default-deploy</id>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>deploy</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <serverId>nexus</serverId>
-                    <nexusUrl>http://nexus.server:9091/</nexusUrl>
-                    <skipStaging>true</skipStaging>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
-
 </project>
 
