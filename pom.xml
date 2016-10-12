@@ -1,7 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.thoughtworks.lean</groupId>
     <artifactId>leansw-artifactory-client</artifactId>
     <version>1.2-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -10,22 +8,11 @@
     <url>http://www.thoughtworks.com</url>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.0.RELEASE</version>
+        <groupId>com.thoughtworks.lean</groupId>
+        <artifactId>leansw-service-parent</artifactId>
+        <version>1.0</version>
     </parent>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Camden.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <properties>
         <java.version>1.8</java.version>
@@ -40,7 +27,6 @@
     </scm>
 
     <dependencies>
-
         <dependency>
             <groupId>com.thoughtworks.lean</groupId>
             <artifactId>leansw-common</artifactId>
@@ -146,17 +132,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>libs-snapshot-local</id>
-            <url>http://artifactory.dev.twleansw.com:8081/artifactory/libs-snapshot-local</url>
-        </snapshotRepository>
-        <repository>
-            <id>libs-release-local</id>
-            <url>http://artifactory.dev.twleansw.com:8081/artifactory/libs-release-local</url>
-        </repository>
-    </distributionManagement>
 
     <build>
         <plugins>
